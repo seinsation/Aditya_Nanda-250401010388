@@ -40,7 +40,7 @@ project-root/
 Cara Menjalankan
 -------------------------------------------------------------------------------------------------
 Website dapat diakses langsung melalui hosting Vercel:
-https://aditya-nanda-250401010388.vercel.app/
+https://adityananda-250401010388.vercel.app/
 
 -------------------------------------------------------------------------------------------------
 Catatan
