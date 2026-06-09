@@ -4,7 +4,7 @@ Website CV – Aditya Nanda
 Dosen Pengampu		:	Riad Sahara, S.Si, M.T
 Mata Kuliah			:	UTS Pemrograman Web I
 
-Nama				:	Aditya Nanda
+Nama				 :	Aditya Nanda
 NIM   			:	250401010388
 Kelas				:	IF207
 
@@ -40,7 +40,7 @@ project-root/
 Cara Menjalankan
 -------------------------------------------------------------------------------------------------
 Website dapat diakses langsung melalui hosting Vercel:
-https://aditya-nanda-250401010388.vercel.app/
+https://aditya_nanda-250401010388.vercel.app/
 
 -------------------------------------------------------------------------------------------------
 Catatan
