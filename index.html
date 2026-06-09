@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- =============================================
+       UJIAN TENGAH SEMESTER (UTS)
+
+       Mata Kuliah    : Pemrograman Web I
+       Dosen Pengampu : Riad Sahara, S.SI, MT.
+
+       Nama Mahasiswa : Aditya Nanda
+       NIM            : 250401010388
+       Kelas          : IF207
+
+       Halamann       : Utama
+  ============================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Aditya Nanda</title>
+  <link rel="icon" type="image/png" href="assets/ico/Unsia Logo.png">
+
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (Untuk Pengambilan Sumber Iconn)-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ========================
+       NAVBAR
+  ======================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html" id="brandHome">Aditya Nanda</a>
+
+      <!-- Tombol menu HP -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu navigasi -->
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Link internal — Syarat memiliki link internal menuju section di halaman ini -->
+          <li class="nav-item"><a class="nav-link" href="#tentang"><b>Tentang</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="#pendidikan"><b>Pendidikan</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="#pengalaman"><b>Pengalaman</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian"><b>Keahlian</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri"><b>Galeri</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak"><b>Kontak</b></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+
+  <!-- ========================
+       HERO/BANNER ATAS
+  ======================== -->
+  <section id="hero" class="hero-section text-white text-center">
+    <div class="container">
+
+      <!-- Foto profil bulat — Syarat: ada foto diri -->
+      <img src="assets/img/ADITYA_NANDA.png"
+           alt="Foto Profil Aditya Nanda"
+           class="foto-hero rounded-circle mb-3"
+           onerror="this.src='https://ui-avatars.com/api/?name=Aditya+Nanda&size=150&background=2e86de&color=fff&bold=true'">
+
+      <!-- H1 — Syarat: ada tag heading dan ditambahkan
+            text formatting (bold, italic, underline)-->
+      <h1 class="fw-bold"><u>ADITYA NANDA</u></h1>
+
+      <!-- H3 — Syarat: ada tag heading -->
+      <h3 class="fw-normal mb-3"><b>Staff IT &amp; Administrasi | Mahasiswa Informatika</b></h3>
+
+      <p class="mb-4">
+        <i class="bi bi-geo-alt me-1"> Dumai, Riau &nbsp;&nbsp;</i>
+        <i class="bi bi-envelope me-1"> 250401010388.aditya@mhs.unsia.ac.id</i>
+      </p>
+
+      <a href="#tentang" class="btn btn-light me-2"><b>Profil Saya</b></a>
+      <a href="#kontak" class="btn btn-outline-light"><b>Hubungi Saya</b></a>
+
+    </div>
+  </section>
+  <!-- END HERO -->
+
+
+  <!-- ========================
+       BAGIAN TENTANG SAYA/PROFIL SAYA
+  ======================== -->
+  <section id="tentang" class="py-5">
+    <div class="container">
+
+      <h2 class="text-center mb-4"><b>Tentang <span class="text-primary">Saya</span></b></h2>
+      <hr class="garis-judul mx-auto mb-5">
+
+      <div class="row align-items-center">
+
+        <!-- Kolom foto -->
+        <div class="col-lg-4 text-center mb-4">
+
+          <!-- Foto profil 200x200 — Syarat: ada foto diri -->
+          <img src="assets/img/ADITYA_NANDA.png"
+               alt="Aditya Nanda"
+               class="foto-profil rounded-circle mb-3"
+               onerror="this.src='https://ui-avatars.com/api/?name=Aditya+Nanda&size=200&background=1a2c42&color=fff&bold=true'">
+
+          <!-- Info singkat -->
+          <div class="info-box text-start p-3 rounded">
+            <p class="mb-2"><i class="bi bi-person-fill text-primary me-2"></i><b>Aditya Nanda</b></p>
+            <p class="mb-2"><i class="bi bi-calendar3 text-primary me-2"></i>11 Desember 1992</p>
+            <p class="mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Dumai, Riau</p>
+            <p class="mb-2"><i class="bi bi-mortarboard-fill text-primary me-2"></i>S1 Informatika, UNSIA</p>
+            <p class="mb-0"><i class="bi bi-envelope-fill text-primary me-2"></i>250401010388.aditya@mhs.unsia.ac.id</p>
+          </div>
+
+        </div>
+
+        <!-- Kolom teks -->
+        <div class="col-lg-8">
+
+          <!-- H3 judul sapaan -->
+          <h3 class="mb-3">Halo! Saya <mark>Aditya Nanda</mark></h3>
+
+          <!-- Syarat: minimal 2 paragraf + text formatting -->
+
+          <!-- Paragraf 1 — latar belakang -->
+          <!-- Ketentuan Soal Ujian 2 Minimal 2 Paragraf
+               tentang deskripsi diri, memiliki, text formatting 
+               (bold, italic, mark, underlinne)-->
+          <p class="text-justify">
+            Saya adalah seorang <b>Staff IT dan Administrasi</b> yang saat ini
+            sedang menempuh pendidikan S1 di <b>Universitas Siber Asia (UNSIA)</b>,
+            Program Studi <i>Informatika</i> secara <u>daring (PJJ)</u>.
+            Saya memiliki pengalaman lebih dari empat tahun bekerja di rumah sakit,
+            di mana saya terbiasa mengelola data, membuat laporan, dan
+            memastikan <b>akurasi data</b> sesuai standar operasional.
+          </p>
+
+          <!-- Paragraf 2 — karakter diri -->
+          <p class="text-start">
+            Saya adalah pribadi yang <b>teliti, disiplin, dan bertanggung jawab</b>.
+            Saya menguasai <mark>Microsoft Excel dan Microsoft Word</mark>, serta memiliki
+            kemampuan <i>troubleshooting</i> dasar komputer dan jaringan.
+            Saya percaya bahwa <u>semangat belajar</u> adalah kunci untuk terus berkembang,
+            dan saat ini saya aktif mempelajari <b>pemrograman web</b> sebagai bagian
+            dari perjalanan akademis saya di UNSIA.
+          </p>
+
+          <!-- Paragraf 3 — motivasi -->
+          <p class="text-end">
+            Saya berkomitmen untuk terus belajar hal-hal baru dan siap berkontribusi
+            secara maksimal dalam tim maupun secara mandiri.
+          </p>
+
+          <a href="#pengalaman" class="btn btn-primary me-2">Lihat Pengalaman</a>
+          <a href="#keahlian" class="btn btn-outline-primary">Lihat Keahlian</a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END TENTANG SAYA/PROFIL SAYA -->
+
+
+  <!-- ========================
+       BAGIAN PENDIDIKAN
+  ======================== -->
+  <section id="pendidikan" class="py-5 bg-light">
+    <div class="container">
+
+      <h2 class="text-center mb-4"><b>Riwayat <span class="text-primary">Pendidikan</span></b></h2>
+      <hr class="garis-judul mx-auto mb-5">
+
+      <!-- Tabel 1 — Syarat: minimal 2 tabel ditambah
+            text formatting (bold, italic, underline)-->
+      <div class="table-responsive mb-4">
+        <table class="table table-bordered table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>No</th>
+              <th>Nama Sekolah / Universitas</th>
+              <th>Jurusan</th>
+              <th>Tahun</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><b>Universitas Siber Asia (UNSIA)</b></td>
+              <td><i>S1 Informatika (PJJ)</i></td>
+              <td><u>2025 – Sekarang</u></td>
+              <td><span class="badge bg-primary"><b>Aktif</b></span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><b>SMA Negeri 1 Dumai</b></td>
+              <td><i>IPS</i></td>
+              <td><u>2007 – 2010</u></td>
+              <td><span class="badge bg-success"><b>Lulus</b></span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><b>SMP Swasta Budi Dharma Dumai</b></td>
+              <td><i>-</i></td>
+              <td><u>2004 - 2007</u></td>
+              <td><span class="badge bg-success"><b>Lulus</b></span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><b>SD Negeri 004 Teluk Binjai Dumai</b></td>
+              <td><i>-</i></td>
+              <td><u>1998 - 2004</u></td>
+              <td><span class="badge bg-success"><b>Lulus</b></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tambahan Card Untuk Pendidikan -->
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title fs-5">
+                <i class="bi bi-mortarboard-fill text-primary me-2"></i><b>Universitas Siber Asia</b></h3>
+              <p class="mb-1">Program Studi: <b>S1 Informatika (PJJ)</b></p>
+              <p class="mb-1">NIM: <u>250401010388</u> | Kelas: <b>IF207</b></p>
+              <p class="text-muted small mb-2">2025 – Sekarang | Pembelajaran Jarak Jauh</p>
+              <span class="badge bg-primary">Sedang Berjalan</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title fs-5">
+                <i class="bi bi-building text-success me-2"></i><b>SMA Negeri 1 Dumai</b></h3>
+              <p class="mb-1">Jurusan: <b>Ilmu Pengetahuan Sosial (IPS)</b></p>
+              <p class="text-muted small mb-2">2007 – 2010 | Kota Dumai, Riau</p>
+              <span class="badge bg-success">Selesai / Lulus</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title fs-5">
+                <i class="bi bi-building text-success me-2"></i><b>SMP Swasta Budi Dharma Dumai</b></h3>
+              <p class="mb-1">Jurusan: <b>-</b></p>
+              <p class="text-muted small mb-2">2004 – 2007 | Kota Dumai, Riau</p>
+              <span class="badge bg-success">Selesai / Lulus</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title fs-5">
+                <i class="bi bi-building text-success me-2"></i><b>SD Negeri 004 Teluk Binjai Dumai</b></h3>
+              <p class="mb-1">Jurusan: <b>-</b></p>
+              <p class="text-muted small mb-2">1998 – 2004 | Kota Dumai, Riau</p>
+              <span class="badge bg-success">Selesai / Lulus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END PENDIDIKAN -->
+
+
+  <!-- ========================
+       PENGALAMAN KERJA
+  ======================== -->
+  <section id="pengalaman" class="py-5">
+    <div class="container">
+
+      <h2 class="text-center mb-4"><b>Pengalaman <span class="text-primary">Kerja</span></b></h2>
+      <hr class="garis-judul mx-auto mb-5">
+
+      <!-- Tabel 2 — Syarat: minimal 2 tabel ditambah
+            text formatting (bold, italic, underline)-->
+      <div class="table-responsive mb-4">
+        <table class="table table-striped table-bordered table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>No</th>
+              <th>Jabatan</th>
+              <th>Instansi / Perusahaan</th>
+              <th>Periode</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><b>Staff IT dan Administrasi</b></td>
+              <td><i>RS Graha Yasmine, Dumai</i></td>
+              <td><u>Agt 2021 – Mar 2026</u></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><b>Tenaga Kerja Honorer</b></td>
+              <td><i>Dinas PP &amp; PA Kota Dumai</i></td>
+              <td><u>Jan 2019 – Agt 2021</u></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><b>Operator Penginputan Data</b></td>
+              <td><i>PT Hasanah Surveyor Raya</i></td>
+              <td><u>Nov 2017 – Mar 2018</u></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tambahan Card Untuk Pengalaman -->
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-danger text-white">
+              <div class="card-header bg-danger text-center">
+                <h2><b>2021 – 2026</b></h2>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title fs-5"><b>Staff IT &amp; Administrasi</b></h2>
+              <p class="text-muted small">RS Graha Yasmine — Dumai</p>
+              <!-- List 1 — Syarat: minimal 2 list daftar tugas pekerjaan -->
+              <ul>
+                <li>Mengelola dan memvalidasi data sistem</li>
+                <li>Menginput data dengan akurasi tinggi</li>
+                <li>Penanggung Jawab:</li>
+                  <ul>
+                    <li>Program JKN Rumah Sakit</li>
+                    <li>Virtual Claim BPJS Kesehatan</li>
+                    <li>E-Klaim</li>
+                    <li>Sistem Informasi Rumah Sakit Online</li>
+                    <li>Sistem Informasi Sistem Sumber Daya Kesehatan</li>
+                    <li>Aplikasi Presensi Talenta by Mekari</li>
+                  </ul>
+                <li><i>Troubleshooting</i> komputer dan jaringan</li>
+                <li>Koordinasi data antar divisi</li>
+                <li>Membuat laporan harian dan bulanan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-primary text-white">
+              <div class="card-header bg-primary text-center">
+                <h2><b>2019 – 2021</b></h2>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title fs-5"><b>Tenaga Kerja Honorer</b></h2>
+              <p class="text-muted small">Dinas PP &amp; PA Kota Dumai</p>
+              <ul>
+                <li>Mengelola administrasi dan arsip kantor</li>
+                <li>Rekap Surat Pertanggung Jawaban Kegiatan Bidang</li>
+                <li>Menyusun laporan dan dokumen resmi</li>
+                <li>Bekerja sesuai target dan deadline</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-header bg-success text-white">
+              <div class="card-header bg-success text-center">
+                <h2><b>2017 – 2018</b></h2>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title fs-5"><b>Operator Penginputan</b></h2>
+              <p class="text-muted small">PT Hasanah Surveyor Raya</p>
+              <ul>
+                <li>Input data pemetaan ke sistem PTSL BPN</li>
+                <li>Koordinasi dengan tim lapangan</li>
+                <li>Koordinasi dengan masyarakat</li>
+                <li>Bekerja sesuai target dan deadline</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- END PENGALAMAN -->
+
+  <!-- ========================
+       KEAHLIAN & KELEBIHAN
+  ======================== -->
+  <section id="keahlian" class="py-5 bg-light">
+    <div class="container">
+
+      <h2 class="text-center mb-4"><b>Keahlian &amp; <span class="text-primary">Kelebihan</span></b></h2>
+      <hr class="garis-judul mx-auto mb-5">
+
+      <div class="row g-4 mb-4">
+
+        <!-- List Keahlian — Syarat: minimal 2 list (list ke-1) daftar keahlian  -->
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100 p-3">
+            <h3 class="fs-5 mb-3"><i class="bi bi-tools text-primary me-2"></i>Keahlian Saya</h3>
+            <ul>
+              <li><b>Pengoperasian Komputer</b></li>
+              <li>Pengolahan Data &amp; Administrasi</li>
+              <li><mark>Microsoft Excel</mark> &amp; <mark>Microsoft Word</mark></li>
+              <li>Input &amp; Rekap Data Akurasi Tinggi</li>
+              <li><i>Troubleshooting</i> Komputer &amp; Jaringan Dasar</li>
+              <li>Komunikasi yang Baik</li>
+              <li>Teliti dan <u>Cepat Belajar</u></li>
+              <li>Siap Bekerja Shift</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- List Kelebihan — Syarat: minimal 2 list (list ke-2)  kelebihan diri saya  -->
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100 p-3">
+            <h3 class="fs-5 mb-3"><i class="bi bi-star-fill text-warning me-2"></i>Kelebihan Saya</h3>
+            <ol>
+              <li><b>Cepat Belajar dan Adaptif</b></li>
+              <li><b>Disiplin dan Bertanggung Jawab</b></li>
+              <li><b>Mampu Bekerja dengan Deadline</b></li>
+              <li><b>Mampu Bekerja dalam Tim</b></li>
+              <li><b>Ketelitian Tinggi</b></li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tabel 3 — Tingkat Kemampuan -->
+      <div class="table-responsive">
+        <table class="table table-bordered text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>Keahlian</th>
+              <th>Pemula</th>
+              <th>Menengah</th>
+              <th>Mahir</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-start"><b>Microsoft Excel</b></td>
+              <td></td>
+              <td></td>
+              <td><span class="badge bg-success">Mahir</span></td>
+            </tr>
+            <tr>
+              <td class="text-start"><b>Microsoft Word</b></td>
+              <td></td>
+              <td></td>
+              <td><span class="badge bg-success">Mahir</span></td>
+            </tr>
+            <tr>
+              <td class="text-start"><b>Pengolahan Data</b></td>
+              <td></td>
+              <td><span class="badge bg-warning text-dark">Menengah</span></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text-start"><b>Troubleshooting Komputer</b></td>
+              <td></td>
+              <td><span class="badge bg-warning text-dark">Menengah</span></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text-start"><b>HTML</b></td>
+              <td><span class="badge bg-info">Pemula</span></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text-start"><b>CSS</b></td>
+              <td><span class="badge bg-info">Pemula</span></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!-- END KEAHLIAN -->
+
+
+  <!-- ========================
+      GALERI
+  ======================== -->
+  <section id="galeri" class="py-5">
+    <div class="container">
+
+      <h2 class="text-center mb-4"><b>Galeri <span class="text-primary">Foto</span></b></h2>
+      <hr class="garis-judul mx-auto mb-5">
+
+      <div class="row g-4">
+        <!-- Foto Universitas Siber Asia-->
+        <div class="col-md-4">
+          <div class="gambar-galeri">
+            <img src="assets/img/Universitas Siber Asia.jpg"
+                class="img-fluid rounded shadow"
+                alt="Universitas Siber Asia">
+            <p class="text-center mt-2 text-muted small">Universitas Siber Asia</p>
+          </div>
+        </div>
+        <!-- Sertifikat -->
+        <div class="col-md-4">
+          <div class="gambar-galeri">
+            <img src="assets/img/Sertifikat - Pensamaku UNSIA.png"
+                class="img-fluid rounded shadow"
+                alt="Sertifikat Pengenalan Sistem Akademik Universitas Siber Asia">
+            <p class="text-center mt-2 text-muted small">Sertifikat Pengenalan Sistem Akademik dan Kemahasiswaan Universitas</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gambar-galeri">
+            <img src="assets/img/Sertifikat - UNSIA - PJJ Informatika - Bahasa, Makna, dan Mesin Bagaimana AI Belajar Memahami Manusia.png"
+                class="img-fluid rounded shadow"
+                alt="Sertifikat Webinar AI Bahasa">
+            <p class="text-center mt-2 text-muted small">Sertifikat Webinar PJJ Informatika "Bahasa, Makna, dan Mesin: Bagaimana AI Belajar Memahami Manusia</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gambar-galeri">
+            <img src="assets/img/Sertifikat - UNSIA - PJJ Komunikasi - Tantangan dan Masa Depan Profesi Media di Era Artificial Intelligence.png"
+                class="img-fluid rounded shadow"
+                alt="Sertifikat Webinar AI Media">
+            <p class="text-center mt-2 text-muted small">Sertifikat Webinar PJJ Komunikasi "Tantangan dan Masa Depan Profesi Media di Era <i>Artificial Intelligence</i></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gambar-galeri">
+            <img src="assets/img/Sertifikat - UNSIA - PJJ Sistem Informasi - When AI Meet Business Model Management.png"
+                class="img-fluid rounded shadow"
+                alt="Sertifikat Webinar AI Bisnis">
+            <p class="text-center mt-2 text-muted small">Sertifikat Webinar PJJ Sistem Informasi "<i>When AI Meet Business Model Management</i>"</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gambar-galeri">
+            <img src="assets/img/Sertifikat - Webinar Satgas PPKPT.png"
+                class="img-fluid rounded shadow"
+                alt="Sertifikat Webinar PPKPT">
+            <p class="text-center mt-2 text-muted small">Sertifikat Webinar Satgas PPKT</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tombol menuju halaman galeri.html (link internal antar halaman) -->
+      <div class="text-center mt-5">
+        <a href="pages/galeri.html" class="btn btn-primary btn-lg">
+          <i class="bi bi-images me-2"></i><b>Lihat Semua Sertifikat</b>
+          <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- END GALERI -->
+
+
+  <!-- ========================
+       KONTAK
+  ======================== -->
+  <section id="kontak" class="py-5 bg-light">
+    <div class="container">
+
+      <h2 class="text-center mb-4"><b>Hubungi <span class="text-primary">Saya</span></b></h2>
+      <hr class="garis-judul mx-auto mb-5">
+
+      <!-- Link Eksternal — Syarat memiliki link eksternal -->
+      <div class="row g-4 justify-content-center">
+
+        <!-- Link Eksternal menuju Email -->
+        <div class="col-md-3 col-sm-6 text-center">
+          <a href="https://mail.google.com/mail/?view=cm&to=250401010388.aditya@mhs.unsia.ac.id" target="_blank" class="kartu-kontak d-block p-4 rounded shadow-sm">
+            <i class="bi bi-envelope-fill fs-1 mb-2" style="color:#EA4335;"></i>
+            <h3 class="fs-6 fw-bold">Email</h3>
+            <span class="badge bg-danger">Kirim Email</span>
+          </a>
+        </div>
+
+        <!-- Link Eksternal menuju Facebook -->
+        <div class="col-md-3 col-sm-6 text-center">
+          <a href="https://www.facebook.com/aditya.nanda11" target="_blank" class="kartu-kontak d-block p-4 rounded shadow-sm">
+            <i class="bi bi-facebook fs-1 mb-2" style="color:#1877F2;"></i>
+            <h3 class="fs-6 fw-bold">Facebook</h3>
+            <span class="badge" style="background:#1877F2;">Lihat Profil</span>
+          </a>
+        </div>
+
+        <!-- Link Eksternal menuju Instagram -->
+        <div class="col-md-3 col-sm-6 text-center">
+          <a href="https://www.instagram.com/adiiityananda/" target="_blank" class="kartu-kontak d-block p-4 rounded shadow-sm">
+            <i class="bi bi-instagram fs-1 mb-2" style="color:#E1306C;"></i>
+            <h3 class="fs-6 fw-bold">Instagram</h3>
+            <span class="badge bg-danger">Lihat Profil</span>
+          </a>
+        </div>
+
+        <!-- Link Eksternal menuju GitHub -->
+        <div class="col-md-3 col-sm-6 text-center">
+          <a href="https://github.com/seinsation" target="_blank" class="kartu-kontak d-block p-4 rounded shadow-sm">
+            <i class="bi bi-github fs-1 mb-2" style="color:#24292e;"></i>
+            <h3 class="fs-6 fw-bold">GitHub</h3>
+            <span class="badge bg-dark">Lihat Repository</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Alamat -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6 text-center">
+          <div class="card shadow-sm p-3">
+            <h3 class="fs-5 mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Alamat</h3>
+            <address class="mb-0">
+              Jalan Soekarno-Hatta, Bukit Batrem<br>
+              Kecamatan Dumai Timur<br>
+              <b>Kota Dumai, Riau</b><br>
+              28822
+            </address>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <!-- Tombol menuju halaman kontak.html (link internal antar halaman) -->
+      <div class="text-center mt-4">
+        <a href="pages/kontak.html" class="btn btn-outline-primary btn-lg">
+          <i class="bi bi-envelope-open me-2"></i><b>Halaman Kontak Lengkap</b>
+          <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- END KONTAK -->
+
+
+  <!-- ========================
+       FOOTER
+  ======================== -->
+  <footer class="footer-bawah text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1 fw-semibold">Aditya Nanda</p>
+      <p class="mb-2 small" style="color:rgba(255,255,255,0.6);">
+        <b>NIM: 250401010388 &nbsp;|&nbsp; Kelas IF207 &nbsp;|&nbsp;
+        Pemrograman Web I &nbsp;|&nbsp; Universitas Siber Asia</b>
+      </p>
+      <p class="mb-0 small" style="color:rgba(255,255,255,0.5);">
+        &copy; 2026 Aditya Nanda
+      </p>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- Tombol kembali ke atas -->
+  <button id="backToTop" title="Kembali ke atas">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript buatan sendiri -->
+  <script src="script.js"></script>
+
+</body>
+</html>

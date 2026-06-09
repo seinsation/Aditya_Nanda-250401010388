@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- =============================================
+       UJIAN TENGAH SEMESTER (UTS)
+
+       Mata Kuliah    : Pemrograman Web I
+       Dosen Pengampu : Riad Sahara, S.SI, MT.
+
+       Nama Mahasiswa : Aditya Nanda
+       NIM            : 250401010388
+       Kelas          : IF207
+
+       Halaman        : Galeri
+  ============================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - Aditya Nanda</title>
+  <link rel="icon" type="image/png" href="../assets/ico/Unsia Logo.png">
+
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (Untuk Pengambilan Sumber Icon) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS yang sama dengan halaman utama (naik satu folder) -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- ========================
+       NAVBAR
+  ======================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+
+      <!-- Tombol home yang akan balik ke halaman awal -->
+      <a class="navbar-brand fw-bold" href="../index.html">Aditya Nanda</a>
+
+      <!-- Tombol menu apabila mode HP -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu navigasi — href menuju index.html#section -->
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Link internal antar halaman — menuju section di index.html -->
+          <li class="nav-item"><a class="nav-link" href="../index.html#tentang"><b>Tentang</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#pendidikan"><b>Pendidikan</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#pengalaman"><b>Pengalaman</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#keahlian"><b>Keahlian</b></a></li>
+          <!-- Link aktif — halaman ini sendiri -->
+          <li class="nav-item"><a class="nav-link active" href="galeri.html"><b>Galeri</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html"><b>Kontak</b></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+
+  <!-- ========================
+       HEADER HALAMAN GALERI
+  ======================== -->
+  <!-- bagian header halaman galeri -->
+  <div class="galeri-header text-white text-center">
+    <div class="container">
+      <h1 class="fw-bold"><i class="bi bi-award-fill me-3"></i>Galeri Sertifikat</h1>
+      <h3 class="fw-normal">Aditya Nanda — NIM 250401010388</h3>
+      <p class="mb-0">Kumpulan sertifikat kegiatan dan webinar selama perkuliahan di UNSIA</p>
+    </div>
+  </div>
+  <!-- END HEADER -->
+
+
+  <!-- ========================
+       KONTEN GALERI LENGKAP
+  ======================== -->
+  <section class="py-5">
+    <div class="container">
+
+      <h2 class="text-center mb-4"><b>Semua <span class="text-primary">Gambar</span></b></h2>
+      <hr class="garis-judul mx-auto mb-5">
+
+      <!-- grid galeri gambar dan sertifikat -->
+      <div class="row g-4">
+        <!-- Gambar Universitas Siber Asia-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow sertifikat-card h-100">
+            <div class="gambar-galeri-besar">
+              <img src="../assets/img/Universitas Siber Asia.jpg"
+                   class="card-img-top"
+                   alt="Universitas Siber Asia">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="fs-6 fw-bold">Universitas Siber Asia</h3>
+              <p class="text-muted small mb-2">Kampus Digital Pertama di Indonesia</p>
+              <span class="badge bg-primary">Universitas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sertifikat 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow sertifikat-card h-100">
+            <div class="gambar-galeri-besar">
+              <img src="../assets/img/Sertifikat - Pensamaku UNSIA.png"
+                   class="card-img-top"
+                   alt="Sertifikat PENSAMAKU UNSIA">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="fs-6 fw-bold">Sertifikat PENSAMAKU UNSIA</h3>
+              <p class="text-muted small mb-2">
+                Pengenalan Sistem Akademik dan Kemahasiswaan Universitas<br>
+                <i>Jakarta, 11 April 2026</i>
+              </p>
+              <span class="badge bg-success">Sertifikat</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Sertifikat 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow sertifikat-card h-100">
+            <div class="gambar-galeri-besar">
+              <img src="../assets/img/Sertifikat - UNSIA - PJJ Informatika - Bahasa, Makna, dan Mesin Bagaimana AI Belajar Memahami Manusia.png"
+                   class="card-img-top"
+                   alt="Sertifikat Webinar Bahasa Makna dan Mesin">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="fs-6 fw-bold">Sertifikat Webinar PJJ Informatika</h3>
+              <p class="text-muted small mb-2">
+                "Bahasa, Makna, dan Mesin: Bagaimana AI Belajar Memahami Manusia"<br>
+                <i>Jakarta, 8 Maret 2026</i>
+              </p>
+              <span class="badge bg-success">Sertifikat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sertifikat 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow sertifikat-card h-100">
+            <div class="gambar-galeri-besar">
+              <img src="../assets/img/Sertifikat - UNSIA - PJJ Komunikasi - Tantangan dan Masa Depan Profesi Media di Era Artificial Intelligence.png"
+                   class="card-img-top"
+                   alt="Sertifikat Webinar Media AI">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="fs-6 fw-bold">Sertifikat Webinar PJJ Komunikasi</h3>
+              <p class="text-muted small mb-2">
+                "Tantangan dan Masa Depan Profesi Media di Era <i>Artificial Intelligence</i>"<br>
+                <i>Jakarta, 17 Maret 2026</i>
+              </p>
+              <span class="badge bg-success">Sertifikat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sertifikat 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow sertifikat-card h-100">
+            <div class="gambar-galeri-besar">
+              <img src="../assets/img/Sertifikat - UNSIA - PJJ Sistem Informasi - When AI Meet Business Model Management.png"
+                   class="card-img-top"
+                   alt="Sertifikat Webinar When AI Meet Business">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="fs-6 fw-bold">Sertifikat Webinar PJJ Sistem Informasi</h3>
+              <p class="text-muted small mb-2">
+                "<i>When AI Meet Business Model Management</i>"<br>
+                <i>Jakarta, 7 Maret 2026</i>
+              </p>
+              <span class="badge bg-success">Sertifikat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sertifikat 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow sertifikat-card h-100">
+            <div class="gambar-galeri-besar">
+              <img src="../assets/img/Sertifikat - Webinar Satgas PPKPT.png"
+                   class="card-img-top"
+                   alt="Sertifikat Webinar Satgas PPKPT">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="fs-6 fw-bold">Sertifikat Webinar Satgas PPKPT</h3>
+              <p class="text-muted small mb-2">
+                "Pencegahan dan Penanganan Penyimpangan Perilaku Komunikasi di Lingkungan Perguruan Tinggi"<br>
+                <i>Jakarta, 11 Mei 2026</i>
+              </p>
+              <span class="badge bg-success">Sertifikat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol kembali ke halaman utama -->
+      <div class="text-center mt-5">
+        <a href="../index.html" class="btn btn-outline-secondary me-2">
+          <i class="bi bi-arrow-left me-2"></i><b>Kembali ke Halaman Utama</b>
+        </a>
+        <a href="kontak.html" class="btn btn-primary">
+          <i class="bi bi-envelope me-2"></i><b>Hubungi Saya</b>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- END KONTEN GALERI -->
+
+
+  <!-- ========================
+       FOOTER
+       (Sama dengan index.html)
+  ======================== -->
+  <footer class="footer-bawah text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1 fw-semibold">Aditya Nanda</p>
+      <p class="mb-2 small" style="color:rgba(255,255,255,0.6);">
+        <b>NIM: 250401010388 &nbsp;|&nbsp; Kelas IF207 &nbsp;|&nbsp;
+        Pemrograman Web I &nbsp;|&nbsp; Universitas Siber Asia</b>
+      </p>
+      <p class="mb-0 small" style="color:rgba(255,255,255,0.5);">
+        &copy; 2026 Aditya Nanda
+      </p>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- Tombol kembali ke atas -->
+  <button id="backToTop" title="Kembali ke atas">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript yang sama dengan halaman utama -->
+  <script src="../script.js"></script>
+
+</body>
+</html>

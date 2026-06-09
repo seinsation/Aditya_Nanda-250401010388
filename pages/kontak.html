@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- =============================================
+       UJIAN TENGAH SEMESTER (UTS)
+
+       Mata Kuliah    : Pemrograman Web I
+       Dosen Pengampu : Riad Sahara, S.SI, MT.
+
+       Nama Mahasiswa : Aditya Nanda
+       NIM            : 250401010388
+       Kelas          : IF207
+
+       Halaman        : Kontak
+  ============================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Aditya Nanda</title>
+  <link rel="icon" type="image/png" href="../assets/ico/Unsia Logo.png">
+
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (Untuk Pengambilan Sumber Icon) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS yang sama dengan halaman utama (naik satu folder) -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- ========================
+       NAVBAR
+       (Sama dengan index.html,
+        tapi link menuju index.html#section)
+  ======================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+
+      <!-- Brand — klik kembali ke halaman utama -->
+      <a class="navbar-brand fw-bold" href="../index.html">Aditya Nanda</a>
+
+      <!-- Tombol menu HP -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu navigasi — href menuju index.html#section -->
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Link internal antar halaman — menuju section di index.html -->
+          <li class="nav-item"><a class="nav-link" href="../index.html#tentang"><b>Tentang</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#pendidikan"><b>Pendidikan</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#pengalaman"><b>Pengalaman</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#keahlian"><b>Keahlian</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html"><b>Galeri</b></a></li>
+          <!-- Link aktif — halaman ini sendiri -->
+          <li class="nav-item"><a class="nav-link active" href="kontak.html"><b>Kontak</b></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+
+  <!-- ========================
+       HEADER HALAMAN KONTAK
+  ======================== -->
+  <!-- bagian header halaman kontak -->
+  <div class="galeri-header text-white text-center">
+    <div class="container">
+      <h1 class="fw-bold"><i class="bi bi-envelope-fill me-3"></i>Hubungi Saya</h1>
+      <h3 class="fw-normal">Aditya Nanda — NIM 250401010388</h3>
+      <p class="mb-0">Silakan hubungi saya melalui salah satu kanal di bawah ini</p>
+    </div>
+  </div>
+  <!-- END HEADER -->
+
+
+  <!-- ========================
+       KARTU LINK KONTAK
+  ======================== -->
+  <section class="py-5">
+    <div class="container">
+
+      <h2 class="text-center mb-4"><b>Media <span class="text-primary">Sosial</span></b></h2>
+      <hr class="garis-judul mx-auto mb-5">
+
+      <!-- link kontak eksternal memiliki 
+           minimal 3 link eksternal -->
+      <div class="row g-4 justify-content-center mb-5">
+
+        <!-- Link Eksternal: Email -->
+        <div class="col-md-3 col-sm-6 text-center">
+          <a href="https://mail.google.com/mail/?view=cm&to=250401010388.aditya@mhs.unsia.ac.id"
+             target="_blank" class="kartu-kontak d-block p-4 rounded shadow-sm">
+            <i class="bi bi-envelope-fill fs-1 mb-2" style="color:#EA4335;"></i>
+            <h3 class="fs-6 fw-bold">Email</h3>
+            <span class="badge bg-danger">Kirim Email</span>
+          </a>
+        </div>
+
+        <!-- Link Eksternal: Facebook -->
+        <div class="col-md-3 col-sm-6 text-center">
+          <a href="https://www.facebook.com/aditya.nanda11"
+             target="_blank" class="kartu-kontak d-block p-4 rounded shadow-sm">
+            <i class="bi bi-facebook fs-1 mb-2" style="color:#1877F2;"></i>
+            <h3 class="fs-6 fw-bold">Facebook</h3>
+            <span class="badge" style="background:#1877F2;">Lihat Profil</span>
+          </a>
+        </div>
+
+        <!-- Link Eksternal: Instagram -->
+        <div class="col-md-3 col-sm-6 text-center">
+          <a href="https://www.instagram.com/adiiityananda/"
+             target="_blank" class="kartu-kontak d-block p-4 rounded shadow-sm">
+            <i class="bi bi-instagram fs-1 mb-2" style="color:#E1306C;"></i>
+            <h3 class="fs-6 fw-bold">Instagram</h3>
+            <span class="badge bg-danger">Lihat Profil</span>
+          </a>
+        </div>
+
+        <!-- Link Eksternal: GitHub -->
+        <div class="col-md-3 col-sm-6 text-center">
+          <a href="https://github.com/seinsation"
+             target="_blank" class="kartu-kontak d-block p-4 rounded shadow-sm">
+            <i class="bi bi-github fs-1 mb-2" style="color:#24292e;"></i>
+            <h3 class="fs-6 fw-bold">GitHub</h3>
+            <span class="badge bg-dark">Lihat Repository</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Informasi Alamat dan Data Diri -->
+      <!-- tabel informasi kontak lengkap -->
+      <h2 class="text-center mb-4"><b>Informasi <span class="text-primary">Lengkap</span></b></h2>
+      <hr class="garis-judul mx-auto mb-5">
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Tabel Info Kontak — Syarat: ada tabel -->
+        <div class="col-lg-7">
+          <div class="card shadow-sm p-3">
+            <h3 class="fs-5 mb-3 text-center">
+              <i class="bi bi-person-vcard-fill text-primary me-2"></i>Data Diri
+            </h3>
+            <!-- tabel data diri dan kontak lengkap -->
+            <table class="table table-bordered table-hover">
+              <thead class="table-dark">
+                <tr>
+                  <th>Keterangan</th>
+                  <th>Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><i class="bi bi-person-fill text-primary me-2"></i><b>Nama</b></td>
+                  <td>Aditya Nanda</td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-mortarboard-fill text-primary me-2"></i><b>NIM</b></td>
+                  <td><u>250401010388</u></td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-book-fill text-primary me-2"></i><b>Program Studi</b></td>
+                  <td><i>S1 Informatika (PJJ), UNSIA</i></td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-envelope-fill text-primary me-2"></i><b>Email</b></td>
+                  <td>250401010388.aditya@mhs.unsia.ac.id</td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-geo-alt-fill text-primary me-2"></i><b>Kota</b></td>
+                  <td>Dumai, Riau</td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-house-fill text-primary me-2"></i><b>Alamat</b></td>
+                  <td>Jl. Soekarno-Hatta, Bukit Batrem,<br>Kec. Dumai Timur, <b>Kota Dumai, Riau</b> 28822</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- List Media Sosial -->
+        <div class="col-lg-4">
+          <div class="card shadow-sm p-3 h-100">
+            <h3 class="fs-5 mb-3 text-center">
+              <i class="bi bi-share-fill text-primary me-2"></i>Media Sosial
+            </h3>
+            <!-- daftar list media sosial dan kontak -->
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="bi bi-envelope-fill me-2" style="color:#EA4335;"></i>
+                <b>Email</b><br>
+                <small class="text-muted">250401010388.aditya@mhs.unsia.ac.id</small>
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-facebook me-2" style="color:#1877F2;"></i>
+                <b>Facebook</b><br>
+                <small class="text-muted">aditya.nanda11</small>
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-instagram me-2" style="color:#E1306C;"></i>
+                <b>Instagram</b><br>
+                <small class="text-muted">@adiiityananda</small>
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-github me-2" style="color:#24292e;"></i>
+                <b>GitHub</b><br>
+                <small class="text-muted">seinsation</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- end row -->
+
+      <!-- Tombol kembali ke halaman utama -->
+      <div class="text-center mt-5">
+        <a href="../index.html" class="btn btn-outline-secondary me-2">
+          <i class="bi bi-arrow-left me-2"></i><b>Kembali ke Halaman Utama</b>
+        </a>
+        <a href="galeri.html" class="btn btn-primary">
+          <i class="bi bi-images me-2"></i><b>Lihat Galeri Sertifikat</b>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- END KONTEN KONTAK -->
+
+
+  <!-- ========================
+       FOOTER
+       (Sama dengan index.html)
+  ======================== -->
+  <footer class="footer-bawah text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1 fw-semibold">Aditya Nanda</p>
+      <p class="mb-2 small" style="color:rgba(255,255,255,0.6);">
+        <b>NIM: 250401010388 &nbsp;|&nbsp; Kelas IF207 &nbsp;|&nbsp;
+        Pemrograman Web I &nbsp;|&nbsp; Universitas Siber Asia</b>
+      </p>
+      <p class="mb-0 small" style="color:rgba(255,255,255,0.5);">
+        &copy; 2026 Aditya Nanda
+      </p>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- Tombol kembali ke atas -->
+  <button id="backToTop" title="Kembali ke atas">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript yang sama dengan halaman utama -->
+  <script src="../script.js"></script>
+
+</body>
+</html>

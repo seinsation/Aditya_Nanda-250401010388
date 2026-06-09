@@ -1,0 +1,264 @@
+/* ===========================================
+   UJIAN TENGAH SEMESTER (UTS)
+
+   Mata Kuliah    : Pemrograman Web I
+   Dosen Pengampu : Riad Sahara, S.SI, MT.
+
+   Nama Mahasiswa : Aditya Nanda
+   NIM            : 250401010388
+   Kelas          : IF207
+   =========================================== */
+
+
+/* --- PENGATURAN DASAR --- */
+
+html {
+  scroll-behavior: smooth;      /* Scroll halaman berjalan mulus saat klik menu */
+  scroll-padding-top: 55px;     /* scroll-padding-top memberi jarak agar judul section tidak tertutup oleh navbar yang fixed di atas */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;    /* Font Montserrat untuk seluruh halaman */
+  color: #2d3748;
+}
+
+/* Warna utama yang sering dipakai — ubah di sini untuk ganti tema */
+:root {
+  --biru-tua  : #02198a;  /* Warna navbar dan footer */
+  --biru-muda : #2e86de;  /* Warna aksen / tombol */
+  --abu-bg    : #f0f4f8;  /* Warna background section abu */
+}
+
+
+/* --- NAVBAR --- */
+
+#navbar {
+  background-color: rgba(26, 44, 66, 0.3); /* Transparan di awal */
+  transition: background-color 0.3s ease;
+}
+
+/* Kelas ini ditambahkan oleh JavaScript saat halaman discroll */
+#navbar.navbar-gelap {
+  background-color: var(--biru-tua);
+  box-shadow: 0 2px 10px rgba(29, 41, 173, 0.62);
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
+  text-decoration: underline;
+}
+
+
+/* --- HERO / BANNER ATAS --- */
+
+.hero-section {
+  min-height: 100vh;                  /* Tinggi penuh layar */
+  padding-top: 100px;
+  padding-bottom: 60px;
+
+  /* Warna latar gradien dari gelap ke biru */
+  background: linear-gradient(180deg, #023E8A, #0077B6, #49CAE4);
+}
+
+/* Foto bulat di hero — ukuran TETAP 150x150 piksel */
+.foto-hero {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;                  /* Foto tidak gepeng/stretch */
+  border: 4px solid rgba(255,255,255,0.5);
+}
+
+
+/* --- SECTION UMUM --- */
+
+/* Garis pendek dekoratif di bawah judul section */
+.garis-judul {
+  width: 55px;
+  height: 4px;
+  background-color: var(--biru-muda);
+  border: none;
+  border-radius: 3px;
+  opacity: 1;                         /* Override opacity Bootstrap */
+}
+
+
+/* --- TENTANG SAYA --- */
+
+/* Foto profil bulat di section About — ukuran TETAP 200x200 piksel */
+.foto-profil {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;                  /* Crop otomatis */
+  border: 4px solid var(--biru-muda);
+}
+
+/* Kotak info singkat (nama, tanggal lahir, dll) */
+.info-box {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--biru-muda);
+  font-size: 0.88rem;
+}
+
+.info-box p {
+  padding: 5px 0;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 0;
+}
+
+.info-box p:last-child {
+  border-bottom: none;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+
+/* --- GALERI --- */
+
+/* Gambar di galeri punya ukuran tinggi yang seragam */
+.gambar-galeri img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+
+  /* Efek saat mouse diarahkan ke gambar */
+  transition: transform 0.3s ease;
+}
+
+.gambar-galeri img:hover {
+  transform: scale(1.04);             /* Gambar sedikit membesar */
+}
+
+
+/* --- KONTAK --- */
+
+/* Kartu link kontak (email, facebook, dll) */
+.kartu-kontak {
+  background-color: white;
+  text-decoration: none;              /* Hilangkan garis bawah link */
+  color: inherit;                     /* Warna teks ikut parent */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kartu-kontak:hover {
+  transform: translateY(-6px);        /* Kartu terangkat ke atas */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+  color: inherit;
+}
+
+
+/* --- FOOTER --- */
+
+.footer-bawah {
+  background-color: var(--biru-tua);
+}
+
+.link-footer {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  font-size: 0.88rem;
+}
+
+.link-footer:hover {
+  color: white;
+}
+
+
+/* --- TOMBOL KEMBALI KE ATAS --- */
+
+#backToTop {
+  position: fixed;           /* Posisi tetap di layar */
+  bottom: 25px;
+  right: 25px;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;        /* Bentuk bulat */
+  border: none;
+
+  background-color: var(--biru-muda);
+  color: white;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+  display: none;             /* Tersembunyi dulu, ditampilkan oleh JS */
+  z-index: 999;
+
+  box-shadow: 0 3px 12px rgba(46, 134, 222, 0.5);
+  transition: background-color 0.25s;
+}
+
+#backToTop:hover {
+  background-color: var(--biru-tua);
+}
+
+
+/* --- RESPONSIVE (Tampilan HP) --- */
+
+/* Aturan ini hanya berlaku di layar kecil (HP, lebar < 768px) */
+@media (max-width: 767px) {
+
+  /* Ukuran heading lebih kecil di HP */
+  .hero-section h1 { font-size: 1.7rem; }
+  .hero-section h3 { font-size: 1rem; }
+
+  /* Foto hero sedikit lebih kecil di HP */
+  .foto-hero {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Foto profil sedikit lebih kecil di HP */
+  .foto-profil {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* Gambar galeri lebih pendek di HP */
+  .gambar-galeri img {
+    height: 180px;
+  }
+
+  /* Padding section lebih kecil di HP */
+  .py-5 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+}
+
+
+/* --- HALAMAN GALERI & KONTAK --- */
+
+/* Header halaman galeri/kontak — pengganti hero section */
+.galeri-header {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background: linear-gradient(180deg, #023E8A, #0077B6, #49CAE4);
+}
+
+/* Gambar sertifikat di halaman galeri.html — lebih besar */
+.gambar-galeri-besar img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gambar-galeri-besar img:hover {
+  transform: scale(1.03);
+}
+
+/* Card sertifikat */
+.sertifikat-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sertifikat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
