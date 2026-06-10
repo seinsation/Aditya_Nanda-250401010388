@@ -42,6 +42,8 @@ Cara Menjalankan
 Website dapat diakses langsung melalui hosting Vercel:
 https://adityananda-250401010388.vercel.app/
 
+Atau bisa diakses melalui:
+https://seinsation.github.io/Aditya_Nanda-250401010388/
 -------------------------------------------------------------------------------------------------
 Catatan
 -------------------------------------------------------------------------------------------------
